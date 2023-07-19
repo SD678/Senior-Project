@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Online Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./Musicstyles.css">
+
+</head>
+
+<body>
+<div class="header">
+  <h2>My Music Player</h2>
+</div>
+  <div class="navbar">
+    <a href="./Mainindex/index.html">Main Index</a>
+    <a href="./Aboutme/aboutme.html">About Me</a>
+  </div>
+
+
+
+<div class="grid-container">
+  <audio id="audio1" src="./Songs/Power.mp3"></audio>
+  <button id="play-pause1" button class="b1"></button>
+
+
+
+  <audio id="audio2" src="./Songs/Adrift.mp3"></audio>
+  <button id="play-pause2" button class="b2"></button>
+
+ 
+    <audio id="audio3" src="./Songs/AK_-_Back_Again.mp3"></audio>
+    <button id="play-pause3" button class="b3"></button>
+
+<div class="divider"></div>
+
+    <audio id="audio4" src="./Songs/Skybreak_-_Lightbringer.mp3"></audio>
+    <button id="play-pause4" button class="b4"></button>
+
+</div>
+
+  <div class="footer">
+    <h2>Created for Senior Project 2023</h2>
+  </div>
+
+  <script>
+    var audio1 = document.getElementById("audio1");
+var audio2 = document.getElementById("audio2");
+var audio3 = document.getElementById("audio3");
+var audio4 = document.getElementById("audio4");
+
+var playPause1 = document.getElementById("play-pause1");
+var playPause2 = document.getElementById("play-pause2");
+var playPause3 = document.getElementById("play-pause3");
+var playPause4 = document.getElementById("play-pause4");
+
+function stopAllAudio() {
+  audio1.pause();
+  audio2.pause();
+  audio3.pause();
+  audio4.pause();
+  playPause1.innerHTML = "Play";
+  playPause2.innerHTML = "Play";
+  playPause3.innerHTML = "Play";
+  playPause4.innerHTML = "Play";
+}
+
+
+
+playPause1.addEventListener("click", function() {
+  if (audio1.paused) {
+    stopAllAudio();
+    audio1.play();
+    playPause1.innerHTML = "Pause";
+  } else {
+    audio1.pause();
+    playPause1.innerHTML = "Play";
+  }
+});
+
+playPause2.addEventListener("click", function() {
+  if (audio2.paused) {
+    stopAllAudio();
+    audio2.play();
+    playPause2.innerHTML = "Pause";
+  } else {
+    audio2.pause();
+    playPause2.innerHTML = "Play";
+  }
+});
+
+playPause3.addEventListener("click", function() {
+  if (audio3.paused) {
+    stopAllAudio();
+    audio3.play();
+    playPause3.innerHTML = "Pause";
+  } else {
+    audio3.pause();
+    playPause3.innerHTML = "Play";
+  }
+});
+
+playPause4.addEventListener("click", function() {
+  if (audio4.paused) {
+    stopAllAudio();
+    audio4.play();
+    playPause4.innerHTML = "Pause";
+  } else {
+    audio4.pause();
+    playPause4.innerHTML = "Play";
+  }
+});
+
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>

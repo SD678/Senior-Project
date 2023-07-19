@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+  color: white;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background: linear-gradient(to right, #e5405e 0%, #ffdb3a 45%, #3fffa2 100%) ;}
+.css {width: 95%; background: linear-gradient(to right, #e5405e 0%, #ffdb3a 45%, #3fffa2 100%);}
+.js {width: 80%; background: linear-gradient(to right, #e5405e 0%, #ffdb3a 45%, #3fffa2 100%);}
+
